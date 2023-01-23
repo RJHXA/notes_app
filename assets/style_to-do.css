@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.titulo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+}
+#lista_tarefas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info_task{
+    padding-top: 2vh;
+}
+#task_description{
+    padding: 5px;
+}
+#botao_enviar{
+    margin-left: 2vh;
+    padding: 5px;
+}
+#novos_tasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+#botao_excluir{
+    margin-left: 20px;
+}
+#check_box{
+    margin-right: 20px;
+}
+#novos_tasks {
+    cursor: pointer;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+:checked + div {
+    text-decoration: line-through;
+    color: grey;
+}
